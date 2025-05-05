@@ -42,7 +42,9 @@
   --brownish-red-color: hsl(0 59% 41%);
   --deep-aqua-blue-color: hsl(201 100% 36%);
   --light-icy-blue-color: hsl(187 72% 93%);
-
+  --raspberry-color: hsl(0 79% 72%);
+  --deep-navy-blue-color: hsl(210 100% 20%);
+  --peach-color: hsl(28 100% 86%);
   --system-ui:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -188,6 +190,11 @@ button {
   color: var(--light-icy-blue-color);
 }
 
+.desserts {
+  background: var(--raspberry-color);
+  color: var(--deep-navy-blue-color);
+}
+
 .food-title {
   padding-top: 1em;
   font-family: "Beauty Sunny", var(--system-ui);
@@ -195,7 +202,8 @@ button {
 }
 
 .hot-foods__type,
-.cool-drinks__type {
+.cool-drinks__type,
+.desserts__type {
   display: flex;
   justify-content: space-around;
   gap: 5em;
@@ -244,7 +252,8 @@ button {
 
 @media (width < 85em) {
   .hot-foods__type,
-  .cool-drinks__type {
+  .cool-drinks__type,
+  .desserts__type {
     flex-direction: column;
   }
 
