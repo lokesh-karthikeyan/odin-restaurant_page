@@ -39,7 +39,9 @@
   --deep-moss-green-color: hsl(127 28% 25%);
   --light-beige-color: hsl(36 56% 91%);
   --pale-cream-color: hsl(37 74% 90%);
-  --brownish-red: hsl(0 59% 41%);
+  --brownish-red-color: hsl(0 59% 41%);
+  --deep-aqua-blue-color: hsl(201 100% 36%);
+  --light-icy-blue-color: hsl(187 72% 93%);
 
   --system-ui:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -178,7 +180,12 @@ button {
 }
 
 .hot-foods {
-  background: var(--brownish-red);
+  background: var(--brownish-red-color);
+}
+
+.cool-drinks {
+  background: var(--deep-aqua-blue-color);
+  color: var(--light-icy-blue-color);
 }
 
 .food-title {
@@ -187,7 +194,8 @@ button {
   font-size: var(--font-size-2xl);
 }
 
-.hot-foods__type {
+.hot-foods__type,
+.cool-drinks__type {
   display: flex;
   justify-content: space-around;
   gap: 5em;
@@ -235,7 +243,8 @@ button {
 /* MEDIA QUERIES */
 
 @media (width < 85em) {
-  .hot-foods__type {
+  .hot-foods__type,
+  .cool-drinks__type {
     flex-direction: column;
   }
 
