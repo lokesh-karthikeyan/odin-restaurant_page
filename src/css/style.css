@@ -235,6 +235,40 @@ button {
   transform: scale(1.2);
 }
 
+/* --- ABOUT PAGE --- */
+
+.about {
+  background: var(--pale-cream-color);
+  color: var(--dark-umber-color);
+  padding: 2em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  font-family: "Chicago", var(--system-ui);
+  font-size: var(--font-size-xl);
+  margin-bottom: 2em;
+}
+
+.about__title {
+  font-family: "Beauty Sunny", var(--system-ui);
+  margin-bottom: 1em;
+}
+
+.about .line {
+  width: 100%;
+  background: var(--dark-umber-color);
+  margin-bottom: 1em;
+}
+
+.about__contact {
+  display: flex;
+  gap: 2em;
+}
+
+.contact {
+  border-left: solid 2px var(--dark-umber-color);
+  padding-left: 2em;
+}
+
 /* === FOOTER STYLES === */
 
 .footer {
