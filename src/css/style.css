@@ -30,3 +30,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* === GLOBAL VARIABLES === */
+
+:root {
+  --dark-umber-color: hsl(0 11% 21%);
+  --soft-gold-color: hsl(38 66% 71%);
+  --deep-moss-green-color: hsl(127 28% 25%);
+  --light-beige-color: hsl(36 56% 91%);
+  --rust-red-color: hsl(7 56% 45%);
+
+  --system-ui:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.125rem;
+  --font-size-xl: 1.3125rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2.652rem;
+}
