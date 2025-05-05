@@ -1,0 +1,32 @@
+/* === DEFAULT | RESET STYLES === */
+
+@import "normalize.css";
+
+/* === CUSTOM WEB FONTS === */
+
+@font-face {
+  font-family: "Beauty Sunny";
+  src:
+    url("../fonts/BeautySunny.woff2") format("woff2"),
+    url("../fonts/BeautySunny.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chicago";
+  src:
+    url("../fonts/ChicagoRegular.woff2") format("woff2"),
+    url("../fonts/ChicagoRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanging Letters";
+  src:
+    url("../fonts/HangingLetters.woff2") format("woff2"),
+    url("../fonts/HangingLetters.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
