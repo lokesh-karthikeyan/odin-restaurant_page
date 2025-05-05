@@ -38,7 +38,7 @@
   --soft-gold-color: hsl(38 66% 71%);
   --deep-moss-green-color: hsl(127 28% 25%);
   --light-beige-color: hsl(36 56% 91%);
-  --rust-red-color: hsl(7 56% 45%);
+  --pale-cream-color: hsl(37 74% 90%);
 
   --system-ui:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -50,4 +50,66 @@
   --font-size-xl: 1.3125rem;
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 2.652rem;
+}
+
+/* === BASE STYLES === */
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* === NAVBAR STYLES === */
+
+.header {
+  background: var(--dark-umber-color);
+}
+
+.navbar.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  color: var(--soft-gold-color);
+}
+
+.brand {
+  font-family: "Hanging Letters";
+  font-size: var(--font-size-3xl);
+}
+
+.nav {
+  display: flex;
+  gap: 2em;
+}
+
+.button {
+  background: transparent;
+  padding: 1em 2em;
+  color: var(--pale-cream-color);
+  font-family: "Beauty Sunny";
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+  transition:
+    background 0.4s ease,
+    color 0.4s ease,
+    border 0.4s ease,
+    border-radius 0.4s ease;
+}
+
+.button:hover {
+  border-radius: 0.5em;
+  background: var(--soft-gold-color);
+  color: var(--dark-umber-color);
+  border-bottom: none;
+}
+
+.button.active {
+  border-bottom: solid 0.1em var(--soft-gold-color);
 }
