@@ -39,6 +39,7 @@
   --deep-moss-green-color: hsl(127 28% 25%);
   --light-beige-color: hsl(36 56% 91%);
   --pale-cream-color: hsl(37 74% 90%);
+  --brownish-red: hsl(0 59% 41%);
 
   --system-ui:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -161,6 +162,63 @@ button {
   flex-basis: 40%;
 }
 
+/* --- MENU PAGE --- */
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  border-radius: 0.5em;
+  margin: 5em 0;
+}
+
+.line {
+  width: 80%;
+}
+
+.hot-foods {
+  background: var(--brownish-red);
+}
+
+.food-title {
+  padding-top: 1em;
+  font-family: "Beauty Sunny", var(--system-ui);
+  font-size: var(--font-size-2xl);
+}
+
+.hot-foods__type {
+  display: flex;
+  justify-content: space-around;
+  gap: 5em;
+}
+
+.menu__item-dish-name {
+  padding: 1.5em 0;
+  text-align: center;
+  font-style: italic;
+  font-family: "Chicago", var(--system-ui);
+  font-weight: var(--font-size-2xl);
+}
+
+.menu__item-image {
+  overflow: hidden;
+  border-radius: 0.8em;
+}
+
+.menu__item-image img {
+  max-width: 250px;
+  aspect-ratio: 1/1;
+
+  border-radius: 0.8em;
+  transition: transform 0.4s ease;
+}
+
+.menu__item-image:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 /* === FOOTER STYLES === */
 
 .footer {
@@ -168,8 +226,22 @@ button {
   color: var(--soft-gold-color);
   text-align: center;
   padding: 1em 0;
-  font-family: "Hanging Letters", var(--system-ui);
+  font-family: "Beauty Sunny", var(--system-ui);
   font-weight: bold;
   font-size: var(--font-size-l);
   letter-spacing: 0.2em;
+}
+
+/* MEDIA QUERIES */
+
+@media (width < 85em) {
+  .hot-foods__type {
+    flex-direction: column;
+  }
+
+  .menu__item-image img {
+    max-width: 80%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+  }
 }
