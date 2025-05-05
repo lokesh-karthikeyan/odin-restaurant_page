@@ -54,6 +54,16 @@
 
 /* === BASE STYLES === */
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -80,7 +90,7 @@ button {
 }
 
 .brand {
-  font-family: "Hanging Letters";
+  font-family: "Hanging Letters", var(--system-ui);
   font-size: var(--font-size-3xl);
 }
 
@@ -93,7 +103,7 @@ button {
   background: transparent;
   padding: 1em 2em;
   color: var(--pale-cream-color);
-  font-family: "Beauty Sunny";
+  font-family: "Beauty Sunny", var(--system-ui);
   font-weight: bold;
   font-size: var(--font-size-xl);
   transition:
@@ -112,4 +122,17 @@ button {
 
 .button.active {
   border-bottom: solid 0.1em var(--soft-gold-color);
+}
+
+/* === FOOTER STYLES === */
+
+.footer {
+  background: var(--dark-umber-color);
+  color: var(--soft-gold-color);
+  text-align: center;
+  padding: 1em 0;
+  font-family: "Hanging Letters", var(--system-ui);
+  font-weight: bold;
+  font-size: var(--font-size-l);
+  letter-spacing: 0.2em;
 }
