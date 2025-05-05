@@ -124,6 +124,43 @@ button {
   border-bottom: solid 0.1em var(--soft-gold-color);
 }
 
+/* === MAIN CONTENT STYLES === */
+
+/* --- HOME PAGE --- */
+
+.content {
+  background: var(--deep-moss-green-color);
+  color: var(--light-beige-color);
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.content__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.content__title {
+  font-family: "Beauty Sunny", var(--system-ui);
+  font-size: var(--font-size-3xl);
+}
+
+.content__body {
+  font-family: "Chicago", var(--system-ui);
+  font-size: var(--font-size-xl);
+}
+
+.content__left,
+.content__right {
+  flex-basis: 40%;
+}
+
 /* === FOOTER STYLES === */
 
 .footer {
